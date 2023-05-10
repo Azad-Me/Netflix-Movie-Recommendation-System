@@ -20,14 +20,14 @@ recommendation_engine('Naruto Shippuden : Blood Prison' )
 
 "Your choice is great. Have a look over these movies."
 
-Naruto Shippuden : Blood Prison\
-Naruto Shippûden the Movie: Bonds\
-Naruto Shippuden: The Movie\
-Naruto\
-Naruto the Movie 3: Guardians of the Crescent Moon Kingdom\
-Naruto Shippuden: The Movie: The Lost Tower\
-Naruto Shippûden the Movie: The Will of Fire\
-Naruto the Movie 2: Legend of the Stone of Gelel\
+Naruto Shippuden : Blood Prison
+Naruto Shippûden the Movie: Bonds
+Naruto Shippuden: The Movie
+Naruto
+Naruto the Movie 3: Guardians of the Crescent Moon Kingdom
+Naruto Shippuden: The Movie: The Lost Tower
+Naruto Shippûden the Movie: The Will of Fire
+Naruto the Movie 2: Legend of the Stone of Gelel
 Naruto the Movie: Ninja Clash in the Land of Snow
 ```
 ## Conslusion
