@@ -1,6 +1,6 @@
 # Netflix-Movie-Recommendation-System
 
-![image](https://github.com/Azad-Me/Netflix-Movie-Recommendation-System/assets/122529968/c4037e77-e482-4ac5-b76e-a9b5ec132540)
+![image](https://github.com/Azad-Me/Netflix-Movie-Recommendation-System/assets/122529968/ec5b3590-950c-4359-9b26-f5a0e5b4011c)
 
 
 ## Project Summary
@@ -15,9 +15,11 @@ Our project, therefore, focuses on reshaping the existing recommendation system 
 
 By building a better recommendation system, we aim to improve user engagement, drive customer satisfaction, and ultimately increase revenue by providing a better user experience. We will measure the success of our project by tracking the engagement and satisfaction levels of our users, as well as analyzing the revenue generated from increased user engagement.
 ## Results
-### recommendation_engine('Naruto Shippuden : Blood Prison' )
-Your choice is great. Have a look over these movies.
- 
+```
+recommendation_engine('Naruto Shippuden : Blood Prison' )
+
+"Your choice is great. Have a look over these movies."
+
 Naruto Shippuden : Blood Prison\
 Naruto Shippûden the Movie: Bonds\
 Naruto Shippuden: The Movie\
@@ -27,7 +29,7 @@ Naruto Shippuden: The Movie: The Lost Tower\
 Naruto Shippûden the Movie: The Will of Fire\
 Naruto the Movie 2: Legend of the Stone of Gelel\
 Naruto the Movie: Ninja Clash in the Land of Snow
-
+```
 ## Conslusion
 Finally , after getting the movies clustered by utilizing the director , genre and general information about the content provided by the Netflix, we have built our recommendation engine.
 
