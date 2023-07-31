@@ -24,12 +24,33 @@ def movies_recommendation(movie_nme):
   index = data[data['title']== movie_nme].index[0]
   similar_content = sorted(list(enumerate(similarities[index])),reverse = True , key = lambda x: x[-1])
 
-  recommend_hotels =[]
+  recommend_movies =[]
   for i,j in similar_content[1:6]:
-    recommend_hotels.append(data['title'][i])
+    recommend_movies.append(data['title'][i])
         
-  return (recommend_hotels)
+  return (recommend_movies)
+    
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://pixabay.com/get/g3ad6aae6a5c46e43ea6ee422570620bf9e1762384056a34d0c4d95303ef347068d3800318ebd1fc0e80f85025ed4eb63.jpg");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
+set_bg_hack_url()
 
 def poster_file(movie_name):
     url = "https://streaming-availability.p.rapidapi.com/v2/search/title"
