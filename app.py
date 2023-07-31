@@ -74,7 +74,7 @@ def poster_file(movie_name):
     return poster
 
 
-st.title('Netflix Movies Recommendation System')
+st.title(':white[Netflix Movies Recommendation System]')
 option = st.selectbox(
         'Movie List',
         data['title'].unique())
