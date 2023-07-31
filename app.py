@@ -76,8 +76,9 @@ def poster_file(movie_name):
 
 #st.title(':white[Netflix Movies Recommendation System]')
 st.markdown("<h1 style='color: white;'>Netflix Movies Recommendation System</h1>", unsafe_allow_html=True)
-option = st.selectbox(
-        'Movie List',
+st.write("<span style='color: white;'>Movie List</span>", unsafe_allow_html=True)
+
+option = st.selectbox(      
         data['title'].unique())
     
     
