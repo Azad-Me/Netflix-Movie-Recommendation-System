@@ -37,7 +37,7 @@ def set_bg_hack_url():
     -------
     The background.
     '''
-        
+    
     st.markdown(
          f"""
          <style>
@@ -49,7 +49,6 @@ def set_bg_hack_url():
          """,
          unsafe_allow_html=True
      )
-
 set_bg_hack_url()
 
 def poster_file(movie_name):
