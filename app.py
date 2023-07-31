@@ -79,7 +79,7 @@ st.markdown("<h1 style='color: white;'>Netflix Movies Recommendation System</h1>
 st.write("<span style='color: white;'>Movie List</span>", unsafe_allow_html=True)
 
 option = st.selectbox(      
-        'Movies List'
+        'Movies List',
         data['title'].unique())
     
     
