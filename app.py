@@ -37,7 +37,6 @@ def set_bg_hack_url():
     -------
     The background.
     '''
-    
     st.markdown(
          f"""
          <style>
