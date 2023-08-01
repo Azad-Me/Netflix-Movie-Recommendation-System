@@ -15,6 +15,28 @@ data = data1.iloc[:2500,:]
 with bz2.BZ2File('final_compressed_data.pkl', 'rb') as f:
     similarities = pickle.load(f)
 
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://pixabay.com/get/g3ad6aae6a5c46e43ea6ee422570620bf9e1762384056a34d0c4d95303ef347068d3800318ebd1fc0e80f85025ed4eb63.jpg");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+set_bg_hack_url()
+
 
 def movies_recommendation(movie_nme):
 
