@@ -5,9 +5,9 @@ import pandas
 import pickle
 import bz2
 
-data1 = pickle.load(open('E:/deployment/netflix/data_new.pkl','rb'))
+data1 = pickle.load(open('data_new.pkl','rb'))
 data = data1.iloc[:2500,:]
-with bz2.BZ2File('E:/deployment/netflix/final_compressed_data.pkl', 'rb') as f:
+with bz2.BZ2File('final_compressed_data.pkl', 'rb') as f:
     similarities = pickle.load(f)
 
 def set_bg_hack_url():
