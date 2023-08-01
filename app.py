@@ -16,20 +16,6 @@ with bz2.BZ2File('final_compressed_data.pkl', 'rb') as f:
     similarities = pickle.load(f)
 
 
-
-def movies_recommendation(movie_nme):
-
-  print('Hey!! Gyus, Checkout these Amazing Movies')
-  print(' ')
-  index = data[data['title']== movie_nme].index[0]
-  similar_content = sorted(list(enumerate(similarities[index])),reverse = True , key = lambda x: x[-1])
-
-  recommend_movies =[]
-  for i,j in similar_content[1:6]:
-    recommend_movies.append(data['title'][i])
-        
-  return (recommend_movies)
-    
 def set_bg_hack_url():
     '''
     A function to unpack an image from url and set as bg.
@@ -49,6 +35,20 @@ def set_bg_hack_url():
          unsafe_allow_html=True
      )
 set_bg_hack_url()
+
+def movies_recommendation(movie_nme):
+
+  print('Hey!! Gyus, Checkout these Amazing Movies')
+  print(' ')
+  index = data[data['title']== movie_nme].index[0]
+  similar_content = sorted(list(enumerate(similarities[index])),reverse = True , key = lambda x: x[-1])
+
+  recommend_movies =[]
+  for i,j in similar_content[1:6]:
+    recommend_movies.append(data['title'][i])
+        
+  return (recommend_movies)
+    
 
 def poster_file(movie_name):
     url = "https://streaming-availability.p.rapidapi.com/v2/search/title"
